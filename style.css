@@ -1,0 +1,49 @@
+.bgimage {
+    height:100vh;
+    background: url('images/heroImage.jpeg');
+    background-size:cover;
+    position:relative;
+    background-color: #1f1f1f;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+    font-family: monospace;
+}
+.hero_desc {
+    font-size: 2rem;
+    font-family: monospace;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+body {
+
+    text-align: center;
+    background-color: #1f1f1f;
+}
+
+.uwugif {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.abouttxt {
+    text-align: center;
+    font-family: monospace;
+    color: white;
+}
+
+.about {
+    color: white;
+    font-family: monospace;
+    font-size: large;
+}
