@@ -4,50 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Shahab</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Shahab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/34f42a6fd4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-            <div class="container">
-                <a class="navbar-brand" href="#">shahab</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    
-                </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#heaader">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="test fa-regular fa-circle-xmark" onclick="closemenu()" style="color:#588147"></i>
+                </ul>
+                <i class="test fa-solid fa-bars" onclick="openmenu()" style="color:#588147"></i>
+            </nav>
+            <div class="header-text">
+                <p style="color:#f7e7ce">Undergrad Student</p>
+                <h1>yo, I'm <span>Mohammed</span><br><span>Shahab.</span><br>I'm a student.</h1>
             </div>
-        </nav>
-        <section class="bgimage" id="home">
-            <div class="container-fluid">
-                <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">mo shahab</h2>
-                    <p class="hero_desc">temporary stuff (for now, only the about thing works)</p>
-                </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
+    <!--          about              -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle"><span>About</span> Me</h1>
+                    <p style="color:#588147">i am currently an undergrad student in computer science engineering. i don't have stuff to
+                        add it in here but i will add it some day later.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>temp1</span><br>something about the temp1 skill</li>    
+                            <li><span>temp2</span><br>something about the temp2 skill</li> 
+                            <li><span>temp3</span><br>something about the temp3 skill</li>                         
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>still a student</span><br>something about the temp1 skill</li>    
+                            <li><span>temp2</span><br>something about the temp2 skill</li> 
+                            <li><span>temp3</span><br>something about the temp3 skill</li>                         
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>school 2011-2018</span><br>uas campus school</li>    
+                            <li><span>puc 2018-2020</span><br>presidency</li> 
+                            <li><span>uni 2020-2024</span><br>sksjti</li>                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------projects----------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My<span> Projects</span></h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-brands fa-discord" style="color:#f7e7ce"></i>
+                    <h2 style="color:#f7e7ce">discord bot</h2>
+                    <p style="color:#f7e7ce">this is the description for the discord bot</p>
+                    <a href="https://github.com/mo-shahab/discord-bot">Goto project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> 
+                <div>
+                    <i class="fa-solid fa-car" style="color:#f7e7ce"></i>
+                    <h2 style="color:#f7e7ce">traffic violations system</h2>
+                    <p style="color:#f7e7ce">this is the description</p>
+                    <a href="https://github.com/ksrisahithi/traffic-violation-database">Goto Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-money-bill-trend-up" style="color:#f7e7ce"></i>
+                    <h2 style="color:#f7e7ce">stock data visualization</h2>
+                    <p style="color:#f7e7ce">this is the description</p>
+                    <a href="https://github.com/mo-shahab/stock-app">Goto Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/mo-shahab?tab=repositories" class="btn">More of my projects</a>
+    </div>
+<!-- ---------------contact---------------  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mohdshahabuddinsoharwardi@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> contact number</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-discord"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Get my CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="thanks">
+            <p style="color:#588147">Still working on this any help would be appreciated. Thank you <i class="fa-solid fa-heart" style="color:#588147"></i> for visiting.</p>
+        </div>
+    </div>
+
 </body>
+<script>
+
+function opentab(tabName) {
+  // Get all the tab content elements and hide them
+  var tabContents = document.getElementsByClassName("tab-contents");
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].style.display = "none";
+  }
+  
+  // Get all the tab link elements and remove the active class
+  var tabLinks = document.getElementsByClassName("tab-links");
+  for (var i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].className = tabLinks[i].className.replace(" active-link", "");
+  }
+  
+  // Show the content of the selected tab and add the active class to the link
+  document.getElementById(tabName).style.display = "block";
+  event.currentTarget.className += " active-link";
+}
+
+function openmenu(){
+    var sidemenu = document.getElementById("sidemenu");
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    var sidemenu = document.getElementById("sidemenu");
+    sidemenu.style.right = "-200px";
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx4jVZ-TDu-jjiJsVT-mmt5UbnXwlgYuj5pj_jQuP4gBRIZQ6Xv_IHlOzfV3xEOB0Ju/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </html>
