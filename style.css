@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +20,46 @@ body{
     background-image: url(images/background.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.header-text{
+    animation: fadein 2s;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+  }
+/* ---------------animations-------------- */
+  @keyframes bounce {
+    from {
+      transform: translateX(0);
+      background: #588147;
+    }
+    to {
+      transform: translateX(600px);
+      background: #f7e7ce;
+    }
+  }
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@keyframes typing {
+    from {
+      --width: 0;
+    }
+    to {
+      --width: 100%;
+    }
 }
 .container{
     padding: 10px 10%;
@@ -80,8 +122,10 @@ nav ul li a:hover::after{
 /*      ABBOUT       */
 #about{
     padding:80px 0;
-    color: #ababab
+    color: #ababab;
+    animation: fadein 2s;
 }
+
 
 .row{
     display: flex;
@@ -152,6 +196,11 @@ nav ul li a:hover::after{
     margin-bottom: 5px;
 }
 
+.tab-contents ul li i{
+    color:#588147;
+    font-size: 20px;
+}
+
 .tab-contents{
     display:none;
 }
@@ -209,6 +258,18 @@ nav ul li a:hover::after{
     line-height: 10;
     margin-top: 20px;
     display: inline-block;
+}
+
+#profile{
+    text-decoration: underline;
+    color:#588147;
+    font-size: 12px;
+    display: inline;
+    margin-top: 0;
+    line-height: 0;
+}
+#profile:hover{
+    color: #f7e7ce;
 }
 
 .projects-list div:hover{
@@ -363,6 +424,9 @@ nav .test{
     }
     .thanks{
         font-size: 14px;
+    }
+    .shape{
+        display:none;
     }
 }
 
