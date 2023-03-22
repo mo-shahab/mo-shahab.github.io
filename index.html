@@ -12,7 +12,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo2.jpg" class="logo">
+                <a href="anime.html" target="_blank"><img src="images/logo2.jpg" class="logo"></a>
                 <ul id="sidemenu">
                     <li><a href="#heaader">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -24,6 +24,7 @@
                 <i class="test fa-solid fa-bars" onclick="openmenu()" style="color:#588147"></i>
             </nav>
             <div class="header-text">
+                <div class="shape"></div>
                 <p style="color:#f7e7ce">Undergrad Student</p>
                 <h1>yo, I'm <span>Mohammed</span><br><span>Shahab.</span><br>I'm a student.</h1>
             </div>
@@ -38,8 +39,8 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle"><span>About</span> Me</h1>
-                    <p style="color:#588147">It just makes me feel so good when I am working with computers, 
-                        and in fact I had alot of fun when creating this portfolio. I am an undergrad student at Government SKSJTI. With 
+                    <p style="color:#588147">It just makes me feel so good when I am working with computers.
+                        And in fact I had alot of fun when creating this portfolio. I am an undergrad student at Government SKSJTI. With 
                         enough drive to learn new stuff about computers and trying to keep up with the community I always look forward to the 
                         developments and advancements that are being made in this domain.<br><br>
 
@@ -54,9 +55,9 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Programming Languages</span><br>something about the temp1 skill</li>    
-                            <li><span>temp2</span><br>something about the temp2 skill</li> 
-                            <li><span>temp3</span><br>something about the temp3 skill</li>                         
+                            <li ><i class="fa-solid fa-code"></i> <span>&nbsp;Programming Languages:</span><br><br>&nbsp;&nbsp;C, C++, Python, Java, php</li>    
+                            <li><span><i class="fa-solid fa-book"></i>&nbsp;Libraries and APIs:</span><br><br>&nbsp;&nbsp;Flask, streamlit, discord api, yfinance, spotify api</li> 
+                            <li><span></span><br>something about the temp3 skill</li>                         
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -85,19 +86,22 @@
                 <div>
                     <i class="fa-brands fa-discord" style="color:#f7e7ce"></i>
                     <h2 style="color:#f7e7ce">discord bot</h2>
-                    <p style="color:#f7e7ce">this is the description for the discord bot</p>
+                    <p style="color:#f7e7ce">A simple discord bot made using the discord api. The bot replies with uplifting messages
+                    whenever it receives any sad messages. On using the command for the bot, the bot replies with an inspirational quote.</p>
                     <a href="https://github.com/mo-shahab/discord-bot">Goto project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div> 
                 <div>
                     <i class="fa-solid fa-car" style="color:#f7e7ce"></i>
                     <h2 style="color:#f7e7ce">traffic violations system</h2>
-                    <p style="color:#f7e7ce">this is the description</p>
+                    <p style="color:#f7e7ce; display: inline;">An university project, where I collaborated with <a href="https://github.com/ksrisahithi" target="_blank" id="profile">K Sri Sahithi</a>
+                         and <a href="https://github.com/Chiragkj" target="_blank" id="profile">Chirag KJ</a>. This project is database driven where we used relevant tech stack to implement.</p><br>
                     <a href="https://github.com/ksrisahithi/traffic-violation-database">Goto Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div>
                     <i class="fa-solid fa-money-bill-trend-up" style="color:#f7e7ce"></i>
                     <h2 style="color:#f7e7ce">stock data visualization</h2>
-                    <p style="color:#f7e7ce">this is the description</p>
+                    <p style="color:#f7e7ce">A web app or just app, where I used the streamlit library from python which is used in data visualization
+                    where I fetched the data related to the stock market from the yfinance api.</p>
                     <a href="https://github.com/mo-shahab/stock-app">Goto Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -109,7 +113,7 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="subtitle">Contact me</h1>
+                    <h1 class="subtitle"><span style="color:#f7e7ce">Connect</span> with me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> mohdshahabuddinsoharwardi@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i> contact number</p>
                     <div class="social-icons">
@@ -185,5 +189,5 @@ function closemenu(){
     })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
 </html>
