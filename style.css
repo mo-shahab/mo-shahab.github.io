@@ -32,18 +32,18 @@ body{
     background: blue;
     border-radius: 50%;
     animation: bounce 2s infinite;
-  }
+}
 /* ---------------animations-------------- */
-  @keyframes bounce {
-    from {
-      transform: translateX(0);
-      background: #588147;
-    }
-    to {
-      transform: translateX(600px);
-      background: #f7e7ce;
-    }
-  }
+@keyframes bounce {
+from {
+    transform: translateX(0);
+    background: #588147;
+}
+to {
+    transform: translateX(600px);
+    background: #f7e7ce;
+}
+}
 
 @keyframes fadein {
     from {
@@ -55,10 +55,10 @@ body{
 }
 @keyframes typing {
     from {
-      --width: 0;
+      width: 0;
     }
     to {
-      --width: 100%;
+      width: 100%;
     }
 }
 .container{
